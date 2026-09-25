@@ -5,15 +5,15 @@
   "heroText": "Eu testo tudo antes de indicar. Aqui embaixo ficam os produtos de tecnologia e games que meus inscritos mais compram pelos meus links — sem enrolação, sem review pago disfarçado.",
   "stats": [
     {
-      "value": "120k",
-      "label": "inscritos"
+      "value": "6 Mil",
+      "label": "seguidores"
     },
     {
-      "value": "300+",
+      "value": "muitos",
       "label": "produtos testados"
     },
     {
-      "value": "4.8",
+      "value": "9.5/10",
       "label": "nota média dos indicados"
     }
   ],
@@ -28,18 +28,18 @@
     "usuario": "@oluke",
     "youtube": {
       "nome": "YouTube",
-      "usuario": "@seuusuario",
-      "link": "#"
+      "usuario": "@OLUKE.F",
+      "link": "https://youtube.com/@OLUKE.F"
     },
     "instagram": {
       "nome": "Instagram",
-      "usuario": "@seuusuario",
-      "link": "#"
+      "usuario": "@oluke.skull",
+      "link": "https://www.instagram.com/oluke.skull?stkn=MTQ4czZhOXJwN3FkNQ=="
     },
     "tiktok": {
       "nome": "TikTok",
-      "usuario": "@seuusuario",
-      "link": "#"
+      "usuario": "@oluke28",
+      "link": "https://www.tiktok.com/@oluke28"
     },
     "contact": {
       "nome": "Contato",
