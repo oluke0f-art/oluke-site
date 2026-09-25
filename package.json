@@ -1,0 +1,8 @@
+{
+  "name": "oluke-site",
+  "private": true,
+  "scripts": {
+    "build": "node build.js",
+    "serve": "python -m http.server 8080"
+  }
+}

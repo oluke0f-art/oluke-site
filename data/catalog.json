@@ -1,0 +1,69 @@
+{
+  "categories": [
+    {
+      "id": "Comidas",
+      "nome": "Comidas",
+      "imagem": "catalog/Comidas/capa.jpg",
+      "ativo": true
+    },
+    {
+      "id": "Gadgets",
+      "nome": "Gadgets",
+      "imagem": "catalog/Gadgets/capa.jpg",
+      "ativo": true
+    }
+  ],
+  "products": [
+    {
+      "id": "Gadgets/produto-exemplo",
+      "nome": "Nome do produto",
+      "valor": 0,
+      "link": "https://exemplo.com/seu-link-de-afiliado",
+      "categoria": "Gadgets",
+      "destaque": false,
+      "maisVendido": true,
+      "imagem": "catalog/Gadgets/produto-exemplo/1.jpg",
+      "midias": [
+        {
+          "nome": "1.jpg",
+          "tipo": "imagem",
+          "url": "catalog/Gadgets/produto-exemplo/1.jpg"
+        }
+      ]
+    },
+    {
+      "id": "Gadgets/produto-exemplo copy",
+      "nome": "Nome do produto copia",
+      "valor": 0,
+      "link": "https://exemplo.com/seu-link-de-afiliado",
+      "categoria": "Gadgets",
+      "destaque": false,
+      "maisVendido": true,
+      "imagem": "catalog/Gadgets/produto-exemplo%20copy/1.jpg",
+      "midias": [
+        {
+          "nome": "1.jpg",
+          "tipo": "imagem",
+          "url": "catalog/Gadgets/produto-exemplo%20copy/1.jpg"
+        }
+      ]
+    },
+    {
+      "id": "Comidas/Taco",
+      "nome": "Taco",
+      "valor": 30,
+      "link": "https://exemplo.com/seu-link-de-afiliado",
+      "categoria": "Comidas",
+      "destaque": true,
+      "maisVendido": true,
+      "imagem": "catalog/Comidas/Taco/1.png",
+      "midias": [
+        {
+          "nome": "1.png",
+          "tipo": "imagem",
+          "url": "catalog/Comidas/Taco/1.png"
+        }
+      ]
+    }
+  ]
+}

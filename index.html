@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>OLUKE — Gadgets e Jogos</title>
+<meta name="theme-color" content="#f2ecda">
+<link rel="icon" href="assets/oluke.jpg">
+<!-- Fontes: carregadas aqui (mais rápido do que @import dentro do CSS) -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Space+Mono:wght@400;700&family=Inter:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <div class="brand">
+      <div class="avatar"><img src="assets/oluke.jpg" alt="OLUKE"></div>
+      <div class="brand-name">OLUKE</div>
+    </div>
+    <nav class="nav-links">
+      <a href="#mais-vendidos">Produtos</a>
+      <a href="#sobre">Sobre</a>
+    </nav>
+    <a href="#" id="subscribe-top" class="sticker-btn">Inscrever-se</a>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="halftone"></div>
+  <div class="wrap">
+    <div class="hero-avatar"><img src="assets/oluke.jpg" alt="OLUKE"></div>
+    <div>
+      <h1 id="hero-title"></h1>
+      <p id="hero-text"></p>
+      <div class="hero-actions">
+        <a href="#mais-vendidos" class="sticker-btn">Ver produtos</a>
+        <a href="#" id="youtube-hero" class="sticker-btn ghost" style="background:transparent;color:var(--paper);border-color:var(--paper);">Assistir no YouTube</a>
+      </div>
+      <div class="hero-stats" id="hero-stats"></div>
+    </div>
+  </div>
+</section>
+
+<section class="section catalog-section" id="mais-vendidos">
+  <div class="wrap">
+    <div class="catalog-nav" id="catalog-nav">
+      <button class="catalog-nav-tab active" type="button" data-view="products">Produtos</button>
+      <button class="catalog-nav-tab" type="button" data-view="categories">Categorias</button>
+    </div>
+
+    <div id="products-view">
+      <section id="best-sellers-section" class="catalog-block">
+        <div class="section-head catalog-heading">
+          <div>
+            <p class="eyebrow">Recomendados</p>
+            <h2>Mais vendidos</h2>
+            <p>Os produtos que ficam em destaque na loja.</p>
+          </div>
+        </div>
+        <div class="grid" id="grid">
+          <div class="empty-state"><h3>Carregando produtos…</h3></div>
+        </div>
+        <div class="catalog-action-row">
+          <button id="show-all-products" class="show-all-products" type="button">Ver todos os produtos</button>
+        </div>
+      </section>
+
+      <section id="category-heading" class="category-heading" hidden>
+        <button id="back-to-categories" class="back-to-categories" type="button">← Categorias</button>
+        <div>
+          <p>Categoria</p>
+          <h2 id="selected-category-title"></h2>
+        </div>
+      </section>
+
+      <section id="all-products-section" class="catalog-block all-products-section" hidden>
+        <div class="section-head catalog-heading">
+          <div>
+            <p class="eyebrow">Catálogo completo</p>
+            <h2>Todos os produtos</h2>
+            <p>Role a página para carregar mais produtos.</p>
+          </div>
+          <button id="sort-products" class="sort-products" type="button">Mais baratos ↑</button>
+        </div>
+        <div class="grid" id="all-products-grid"></div>
+      </section>
+    </div>
+
+    <div id="categories-view" class="categories-view" hidden>
+      <div class="section-head catalog-heading">
+        <div>
+          <p class="eyebrow">Explore a loja</p>
+          <h2>Categorias</h2>
+          <p>Escolha uma categoria para ver somente os produtos dela.</p>
+        </div>
+      </div>
+      <div id="categories-grid" class="categories-grid"></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="sobre">
+  <div class="wrap">
+    <div class="subscribe sticker">
+      <div>
+        <h2>Não perca a próxima indicação</h2>
+        <p>Toda semana eu testo um gadget ou jogo novo e atualizo essa página com o que realmente vale a pena.</p>
+      </div>
+      <a href="#" id="subscribe-bottom" class="sticker-btn">Inscrever-se no canal</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-row">
+      <span class="mono">© 2026 OLUKE</span>
+      <div class="foot-links">
+        <a href="#" id="youtube-link">YouTube</a>
+        <a href="#" id="instagram-link">Instagram</a>
+        <a href="#" id="tiktok-link">TikTok</a>
+        <a href="#" id="contact-link">Contato</a>
+      </div>
+    </div>
+    <p class="disclosure" id="disclosure"></p>
+    <p class="site-note">Edite somente os arquivos em <code>catalog/</code> e rode o build novamente.</p>
+  </div>
+</footer>
+
+<div id="social-modal" class="social-popover" hidden aria-hidden="true">
+  <div class="social-popover-box" role="dialog" aria-modal="false" aria-labelledby="social-modal-title">
+    <button id="close-social-modal" class="social-popover-close" type="button" aria-label="Fechar">×</button>
+    <div class="social-profile">
+      <img id="social-profile-photo" src="assets/oluke.jpg" alt="OLUKE">
+      <div>
+        <p class="social-profile-kicker">Siga o OLUKE</p>
+        <h2 id="social-modal-title">Minhas redes sociais</h2>
+        <p id="social-profile-name" class="social-profile-name">@oluke</p>
+      </div>
+    </div>
+    <div id="social-links" class="social-links"></div>
+  </div>
+</div>
+
+<div id="media-modal" class="media-modal" hidden>
+  <div class="media-modal-box">
+    <button id="close-media-modal" class="modal-close" type="button" aria-label="Fechar">×</button>
+    <h2 id="media-modal-title">Mídias</h2>
+    <div id="media-modal-content" class="media-modal-content"></div>
+  </div>
+</div>
+<script src="site.js"></script>
+</body>
+</html>
