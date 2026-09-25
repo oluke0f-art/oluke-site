@@ -1,0 +1,9 @@
+{
+  "nome": "Taco",
+  "valor": 30,
+  "link": "https://exemplo.com/seu-link-de-afiliado",
+  "categoria": "Comidas",
+  "maisVendido": true,
+  "destaque": true,
+  "ativo": true
+}
