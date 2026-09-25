@@ -1,9 +1,0 @@
-{
-  "nome": "Nome do produto",
-  "valor": 0,
-  "link": "https://exemplo.com/seu-link-de-afiliado",
-  "categoria": "Gadgets",
-  "maisVendido": true,
-  "destaque": false,
-  "ativo": true
-}
